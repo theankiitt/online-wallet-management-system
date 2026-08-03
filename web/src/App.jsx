@@ -1,7 +1,10 @@
+import { LandingPage } from "./components/LandingPage";
+
 const App=()=>{
   return(
     <>
-    <h1>Ankit</h1>
+    <LandingPage/>
+    
     </>
 
   )
