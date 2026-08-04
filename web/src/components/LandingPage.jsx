@@ -24,8 +24,9 @@ export const LandingPage=()=>{
                         <li>Contact</li> */}
                     </ul>
                      <section className="space-x-5">
-                    <button className="border border-black px-5 py-2 rounded-md">Login</button>
-                    <button className="bg-[#043d7d] px-5 py-2 rounded-md text-white">Sign Up</button>
+                    <button className="border border-black px-5 py-2 rounded-md">
+                        <a href="">Login</a></button>
+                    <button className="bg-[#043d7d] px-5 py-2 rounded-md text-white"><a href="/register">Sign Up</a></button>
                 </section> 
                 </section>
               
