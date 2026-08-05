@@ -9,6 +9,7 @@ import { LandingPage } from './components/LandingPage.jsx';
 import { UserLogin } from './components/userlogin.jsx';
 // Supports weights 100-900
 import '@fontsource-variable/dm-sans/wght.css';
+import { Layout } from './components/Layout.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -22,6 +23,11 @@ const router = createBrowserRouter([
     path: "/register",
     element: <UserRegister/> ,
   },
+  {
+    path: "/dashboard",
+    element: <Layout/> ,
+  },
+
 
 ]);
 
