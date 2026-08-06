@@ -15,6 +15,7 @@ import { Layout } from './components/Layout.jsx';
 import { SendMoney } from './components/SendMoney.jsx';
 import { Dashboard } from './components/Dashboard.jsx';
 import { AddMoney } from './components/AddMoney.jsx';
+import { Transaction } from './components/Transaction.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: "send-money",
         element: <SendMoney/>
+      },
+      {
+        path: "transaction",
+        element: <Transaction/>
       }
 
     ]

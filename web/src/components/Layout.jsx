@@ -68,8 +68,8 @@ export const Layout=()=>{
     return(
         <main className="flex h-screen">
             <aside className="hidden md:w-1/5 bg-white md:flex md:flex-col border-r-2 border-gray-200 shadow-sm" >
-            <div className="h-[10%] flex justify-between mx-5 py-4 ">
-                <section className="font-extrabold text-3xl tracking-tighy">eWallet</section>
+            <div className="h-[9%] flex justify-between px-5 py-3 border-b-2 border-gray-300 shadow-sm ">
+                <section className="font-extrabold text-3xl tracking-tight heading">eWallet</section>
                 <section><RxHamburgerMenu className="text-2xl"/></section>
             </div>
             <div className="flex-1 py-10">
