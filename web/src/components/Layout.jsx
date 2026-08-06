@@ -8,6 +8,7 @@ import { TbReportSearch } from "react-icons/tb";
 import { IoIosSettings } from "react-icons/io";
 import { MdContactSupport } from "react-icons/md";
 import { BiLogOut } from "react-icons/bi";
+import { Outlet } from "react-router";
 
 
 
@@ -75,7 +76,7 @@ export const Layout=()=>{
 
                 {navigator.map(({icons:Icons,title}, index)=>(
                 <div key={index} className="flex items-center gap-6 px-10 py-3">
-                  <Icons className="text-2xl"/><span className="text-xl font-bold">{title}</span>
+                  <Icons className="text-2xl"/><span className="text-xl font-normal heading">{title}</span>
                 </div>
 
                 ))}
@@ -86,11 +87,13 @@ export const Layout=()=>{
             </aside>
 
             <section className=" flex flex-col flex-1">
-                <div className="bg-white text-black h-18 font-bold text-lg flex justify-end items-center pr-16 gap-5 ">
-                    <div className="bg-red-300 p-3 rounded-full">AG</div>
-                    <div className="r">Hi, Ankit</div></div>
-                <div className="bg-gray-200 flex-1 flex justify-center items-center text-3xl font-extrabold">
-                    Dashboard
+                <div className="bg-white text-black h-16 font-bold text-lg flex justify-end items-center px-16 gap-5 ">
+                    <div className="bg-red-300 w-10 h-10 rounded-full flex justify-center items-center">AG</div>
+                    <div className="r">Hi, Ankit</div>
+            </div>
+
+                <div className="bg-gray-200 flex-1 p-8 ">
+                    <Outlet/> 
                 </div>
             </section>
         </main>

@@ -9,7 +9,11 @@ import { LandingPage } from './components/LandingPage.jsx';
 import { UserLogin } from './components/userlogin.jsx';
 // Supports weights 100-900
 import '@fontsource-variable/dm-sans/wght.css';
+import '@fontsource-variable/geist/wght.css';
+
 import { Layout } from './components/Layout.jsx';
+import { SendMoney } from './components/SendMoney.jsx';
+import { Dashboard } from './components/Dashboard.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -26,6 +30,17 @@ const router = createBrowserRouter([
   {
     path: "/dashboard",
     element: <Layout/> ,
+    children:[
+       {
+        index:true,
+        element: <Dashboard/>
+      },
+      {
+        path: "send-money",
+        element: <SendMoney/>
+      }
+
+    ]
   },
 
 
