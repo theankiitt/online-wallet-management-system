@@ -6,7 +6,7 @@ export const Transaction=()=>{
 
             <h2 className="text-3xl text-black heading uppercase tracking-tight ">Recent Transaction</h2>
             <section className="grid grid-cols-2 md:grid-cols-4 gap-5 justify-between mt-10">
-                <div className="flex gap-8 bg-white p-5 rounded-lg shadow-md">
+                <div className="flex gap-8 bg-white p-5 rounded-lg shadow-md border-t-4 border-[#043d7d]">
                     <GrTransaction className="bg-gray-200 w-10 p-2 h-10 rounded-full "/>
                     <div className="text-lg">
                         <section className="font-bold">Total Transaction</section>
@@ -14,7 +14,7 @@ export const Transaction=()=>{
                     </div>
 
                 </div>
-               <div className="flex gap-8  bg-white p-5 rounded-lg shadow-md">
+               <div className="flex gap-8  bg-white p-5 rounded-lg shadow-md border-t-4 border-[#043d7d]">
                       <GrTransaction className="bg-gray-200 w-10 p-2 h-10 rounded-full "/>
                     <div className="text-lg">
                         <section className="font-bold">Total Transaction</section>
@@ -22,7 +22,7 @@ export const Transaction=()=>{
                     </div>
 
                 </div>
-               <div className="flex gap-8  bg-white p-5 rounded-lg shadow-md">
+               <div className="flex gap-8  bg-white p-5 rounded-lg shadow-md border-t-4 border-[#043d7d]">
                       <GrTransaction className="bg-gray-200 w-10 p-2 h-10 rounded-full "/>
                     <div className="text-lg ">
                         <section className="font-bold">Total Transaction</section>
@@ -30,7 +30,7 @@ export const Transaction=()=>{
                     </div>
 
                 </div>
-               <div className="flex gap-8  bg-white p-5 rounded-lg shadow-md ">
+               <div className="flex gap-8  bg-white p-5 rounded-lg shadow-md border-t-4 border-[#043d7d] ">
                       <GrTransaction className="bg-gray-200 w-10 p-2 h-10 rounded-full "/>
                     <div>
                         <section className="font-bold">Total Transaction</section>
@@ -45,7 +45,7 @@ export const Transaction=()=>{
             <section className="rounded-md border border-gray-300 mt-10">
       <table className="w-full">
     <thead>
-        <tr className="">
+        <tr >
             <th className="p-3 text-left">ID</th>
             <th className="p-3 text-left">Name</th>
             <th className="p-3 text-left">Amount</th>
