@@ -68,15 +68,16 @@ export const Layout=()=>{
     return(
         <main className="flex h-screen">
             <aside className="hidden md:w-1/5 bg-white md:flex md:flex-col border-r-2 border-gray-200 shadow-sm" >
-            <div className="h-[9%] flex justify-between px-5 py-3 border-b-2 border-gray-300 shadow-sm ">
+            <div className="h-[9%] flex justify-between items-center px-5 py-3 border-b-2 border-gray-300 ">
                 <section className="font-extrabold text-3xl tracking-tight heading">eWallet</section>
                 <section><RxHamburgerMenu className="text-2xl"/></section>
             </div>
-            <div className="flex-1 py-10">
+
+            <div className="flex-1 py-8">
 
                 {navigator.map(({icons:Icons,title}, index)=>(
-                <div key={index} className="flex items-center gap-6 px-10 py-3">
-                  <Icons className="text-2xl"/><span className="text-xl font-normal heading">{title}</span>
+                <div key={index} className="flex items-center gap-10 px-8 py-3 ">
+                  <Icons className="text-2xl"/><span className="text-xl font-bold tracking-tight">{title}</span>
                 </div>
 
                 ))}
