@@ -14,6 +14,7 @@ import '@fontsource-variable/geist/wght.css';
 import { Layout } from './components/Layout.jsx';
 import { SendMoney } from './components/SendMoney.jsx';
 import { Dashboard } from './components/Dashboard.jsx';
+import { AddMoney } from './components/AddMoney.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
        {
         index:true,
         element: <Dashboard/>
+      },
+       {
+        path: "add-money",
+        element: <AddMoney/>
       },
       {
         path: "send-money",
