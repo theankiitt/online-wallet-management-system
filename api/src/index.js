@@ -1,12 +1,12 @@
 import app from "./app.js";
 import dbConnection from "./config/db.config.js";
+import env from "./config/env.config.js";
 
 (async () => {
     try {
         await dbConnection();
-
-        app.listen(5000, () => {
-            console.log("Server running on port 5000");
+        app.listen(env.port, () => {
+            console.log(`Server running on port ${env.port}`);
         });
 
     } catch (e) {

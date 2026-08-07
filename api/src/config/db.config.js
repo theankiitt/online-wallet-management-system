@@ -1,19 +1,21 @@
 import mysql from 'mysql2/promise';
+import env from './env.config.js';
 
 const dbConnection=async()=>{
     try{
         const connection=await mysql.createConnection({
-            host: "localhost",
-            user: "root",
-            password: "your_password",
-            database: "your_database"
+            host: env.mysql.host,
+            user: env.mysql.user,
+            port: env.mysql.mysql_port,
+            password: env.mysql.password,
+            database: env.mysql.database
         })
-
         return connection;
 
     }
     catch(e){
-        throw Error("Databaase failed to connected")
+        console.log(e)
+        throw Error("Database failed to connected")
     }
 }
 
